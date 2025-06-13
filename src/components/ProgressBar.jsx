@@ -4,7 +4,7 @@ export default function ProgressBar(props) {
 
   const { text, remainder } = props
 
-  const arr = Array(10).fill(1)
+  const arr = Array(10).fill(' ')
 
   return (
     <div className="level">

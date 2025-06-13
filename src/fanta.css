@@ -665,8 +665,14 @@ color: var(--color-link);
 background: var(--color-link-transparent);
 }
 
+.card-button-tertiary {
+color: var(--background-primary);
+background: var(--gradient-end);
+}
+
 .card-button-primary:hover,
-.card-button-secondary:hover {
+.card-button-secondary:hover,
+.card-button-tertiary:hover {
 transform: none;
 opacity: 0.6;
 }

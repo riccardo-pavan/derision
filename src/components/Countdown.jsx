@@ -11,10 +11,6 @@ export default function Countdown (props) {
 
     const timer = convertMilliseconds(remainingMs)
 
-
-
-
-
     return(
         <div className="card countdown-card">
         {/* Contains the logic for the countdown */}

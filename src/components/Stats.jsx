@@ -3,8 +3,6 @@ import ProgressBar from "./ProgressBar"
 
 export default function Stats ({ name, day, attempts, plan }) {
 
-    const day = 16
-
     const currLvl = calcLevel(day)
     const flooredLvl = Math.floor(currLvl)
     const remainder = (currLvl - flooredLvl) * 100
@@ -29,7 +27,7 @@ export default function Stats ({ name, day, attempts, plan }) {
                 </div>
                 <div>
                     <p>Accuracy</p> 
-                    <h4>{calculateAccuracy(attempts, day).toFixed(1)}</h4>
+                    <h4>{(calculateAccuracy(attempts, day) * 100).toFixed(1)}</h4>
                 </div>
             </div>
 

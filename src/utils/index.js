@@ -42,13 +42,11 @@ export function calculateNewWords(day) {
 
 export function calculateAccuracy(a, day) {
     let totalWords = generateWordArr(day, -1)
-    console.log(a, totalWords)
     return (totalWords.length * 4) / a
 }
 
 export function isEncountered(day, word) {
     let totalWords = generateWordArr(day - 1).map(e => getWordByIndex(WORDS, parseInt(e)).word)
-    console.log(totalWords)
     return totalWords.includes(word)
 }
 
@@ -187,5 +185,36 @@ export function generateDynamicSpacedRepetitionSchedule(
 
     return schedule
 }
+
+export function replaceHalfWithUnderscores(str) {
+  // Get indexes of all non-space characters
+  const letterIndices = [];
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== ' ') {
+      letterIndices.push(i);
+    }
+  }
+
+  // Shuffle the indices randomly
+  for (let i = letterIndices.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [letterIndices[i], letterIndices[j]] = [letterIndices[j], letterIndices[i]];
+  }
+
+  // Calculate how many letters to replace (at least half, rounding up)
+  const countToReplace = Math.floor(letterIndices.length / 3);
+
+  // Convert string to array to mutate characters
+  const chars = str.split('');
+
+  // Replace selected indices with underscores
+  for (let i = 0; i < countToReplace; i++) {
+    chars[letterIndices[i]] = '_';
+  }
+
+  return chars.join('');
+}
+
+
 
 export const PLAN = generateDynamicSpacedRepetitionSchedule(Object.keys(WORDS).length)

@@ -1,12 +1,34 @@
-# React + Vite
+# 🧠 Words Remembering Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Learn three new words a day — the smart and simple way.**
 
-Currently, two official plugins are available:
+This is a minimalist word-learning game that helps you improve your vocabulary by requiring you to **write out the definitions** of three new words daily. It's not just about memorization — it's about **active recall**, which is proven to boost retention.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 How It Works
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Start your day**: Each session gives you **3 new words** to learn.
+2. **Understand & write**: You type in your own definition for each word.
+3. **Check & review**: Compare your definition with the actual one and reflect.
+4. **Progress daily**: Repeat every day and build your word memory like a pro.
+
+---
+
+## ✨ Features
+
+- 🔁 Daily word sessions (just 3 per day)
+- ✍️ Requires you to *write* definitions (active recall)
+- 🧾 Review correct definitions after submitting
+- 📆 Simple progress tracking (optional)
+- 🌙 Clean, distraction-free interface
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/your-username/words-remembering-game.git
+cd words-remembering-game
